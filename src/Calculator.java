@@ -12,25 +12,19 @@ public class Calculator implements MethodCall {
     }
         @Override
     public void choiceMethod() {
-        c = scanner.nextLine();
-        if (c.equalsIgnoreCase("add")) {
+            c = scanner.nextLine();
             a = scanner.nextDouble();
             b = scanner.nextDouble();
+        if (c.equalsIgnoreCase("add")) {
             add = a + b;
         } else if(c.equalsIgnoreCase("division")){
-            a = scanner.nextDouble();
-            b = scanner.nextDouble();
             division = a / b;
         }else if(c.equalsIgnoreCase("subtraction")){
-            a = scanner.nextDouble();
-            b = scanner.nextDouble();
             subtraction = a - b;
         }else if(c.equalsIgnoreCase("multiplication")){
-            a = scanner.nextDouble();
-            b = scanner.nextDouble();
             multiplication = a * b;
         }
-        }
+    }
 
     @Override
     public String toString() {
